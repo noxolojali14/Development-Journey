@@ -1,147 +1,134 @@
-:root {
-    --deep-purple: #382354;
-    --purple: #4b286d;
-    --lavender: #eee8f7;
-    --soft-lavender: #f8f6fc;
-    --white: #ffffff;
-    --grey: #667085;
-    --border: #e2dced;
-    --shadow: 0 10px 30px rgba(56, 35, 84, 0.08);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* ==============================
-   BODY
-============================== */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Noxolo Jali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    margin: 0;
-    background: linear-gradient(135deg, #f8f6fc 0%, #eee8f7 100%);
-    color: #302c38;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    line-height: 1.6;
-}
+<body>
 
-/* ==============================
-   SKIP LINK
-============================== */
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
-.skip-link {
-    position: fixed;
-    top: 10px;
-    left: 12px;
-    z-index: 1000;
-    padding: 10px 16px;
-    background-color: var(--deep-purple);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
+    <header>
+        <h1>My Web Development Journey</h1>
+        <p>Welcome to my website where I share my interest in web development.</p>
+    </header>
 
-.skip-link:hover,
-.skip-link:focus {
-    background-color: var(--purple);
-    color: var(--white);
-}
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
 
-/* ==============================
-   HEADER
-============================== */
+    <main id="main-content">
 
-header {
-    padding: 76px 20px 64px;
-    background: linear-gradient(135deg, #382354 0%, #5a3b80 100%);
-    color: var(--white);
-    text-align: center;
-}
+        <section>
+            <h2>Welcome to My Website</h2>
 
-header h1 {
-    max-width: 850px;
-    margin: 0 auto 12px;
-    color: var(--white);
-    font-family: Georgia, serif;
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    line-height: 1.15;
-}
+            <p>
+                My name is Noxolo Jali. I am interested in web development
+                and enjoy learning how websites are created using HTML,
+                CSS and JavaScript.
+            </p>
 
-header p {
-    max-width: 650px;
-    margin: 0 auto;
-    color: var(--white);
-    font-size: 1.1rem;
-}
+            <p>
+                This website is part of my web development learning journey.
+                I am building my skills by creating websites, practising
+                coding and learning how to design user-friendly pages.
+            </p>
+        </section>
 
-/* ==============================
-   NAVIGATION
-============================== */
+        <!-- Grid Section -->
+        <section>
+            <h2>My Web Development Projects</h2>
 
-nav {
-    display: inline-block;
-    width: 80%;
-    max-width: 1040px;
-    box-sizing: border-box;
-    margin: 22px auto;
-    padding: 8px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background-color: var(--white);
-    box-shadow: var(--shadow);
-    text-align: center;
-}
+            <div class="grid">
 
-nav a {
-    display: inline-block;
-    margin: 0 3px;
-    padding: 9px 18px;
-    border-radius: 8px;
-    color: var(--deep-purple);
-    font-weight: bold;
-    text-decoration: none;
-}
+                <div>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                        alt="Computer showing programming code">
+                    <h3>HTML Projects</h3>
+                    <p>
+                        I use HTML to create the structure and content
+                        of my webpages.
+                    </p>
+                </div>
 
-nav a:hover,
-nav a:focus-visible {
-    background-color: var(--lavender);
-    color: var(--deep-purple);
-    text-decoration: none;
-}
+                <div>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                        alt="Laptop used for programming">
+                    <h3>CSS Projects</h3>
+                    <p>
+                        I use CSS to add colours, layouts, spacing and
+                        styling to my websites.
+                    </p>
+                </div>
 
-/* Descendant selector - only images inside nav */
+            </div>
+        </section>
 
-nav img {
-    width: 10%;
-}
+        <!-- Flex Section -->
+        <section>
+            <h2>My Interests</h2>
 
-/* ==============================
-   MAIN CONTENT
-============================== */
+            <div class="flex">
 
-main {
-    max-width: 1040px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 22px 20px 50px;
-    font-size: 1.05rem;
-}
+                <div>
+                    <h3>Web Development</h3>
+                    <p>
+                        I enjoy creating websites using HTML, CSS and
+                        JavaScript.
+                    </p>
+                </div>
 
-/* ==============================
-   GRID
-============================== */
+                <div>
+                    <h3>Data Analysis</h3>
+                    <p>
+                        I am interested in using data to solve problems
+                        and discover useful insights.
+                    </p>
+                </div>
 
-.grid {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: space-around;
-    align-items: center;
-    row-gap: 20px;
-    column-gap: 24px;
-}
+                <div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        I am exploring how artificial intelligence can
+                        improve everyday experiences.
+                    </p>
+                </div>
 
-.grid img {
-    width: 100%;
-    max-width: 300px;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
+            </div>
+        </section>
+
+        <section>
+            <h2>Learn More</h2>
+
+            <p>
+                I am continuing to improve my coding skills through
+                practice and different web development projects.
+            </p>
+
+            <p>
+                Learn more about HTML on
+                <a href="https://www.w3schools.com/html/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    W3Schools
+                </a>.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Noxolo Jali</p>
+    </footer>
+
+</body>
+
+</html>
